@@ -7,7 +7,7 @@ export default defineConfig({
   retries: 0,
   workers: 1,
   use: {
-    baseURL: 'http://localhost:5173',
+    baseURL: 'http://localhost:5173/tetris4/',
     trace: 'on-first-retry',
   },
   projects: [
@@ -17,7 +17,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'npx vite --port 5173',
+    command: 'npx vite --port 5173 --base /tetris4/',
     port: 5173,
     reuseExistingServer: true,
     stdout: 'pipe',
