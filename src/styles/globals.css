@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-cell: #1a1a2e;
+  --color-cell-border: #2a2a4e;
+  --color-piece-i: #00f5ff;
+  --color-piece-o: #ffdd00;
+  --color-piece-t: #a020f0;
+  --color-piece-s: #00ff00;
+  --color-piece-z: #ff0000;
+  --color-piece-j: #0000ff;
+  --color-piece-l: #ff8c00;
+}
+
+body {
+  @apply bg-gray-950 text-white font-mono;
+}
