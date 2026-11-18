@@ -53,7 +53,7 @@ export default function App() {
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [state.status, moveLeft, moveRight, moveDown, hardDrop, rotate, pauseGame, resumeGame])
+  }, [moveLeft, moveRight, moveDown, hardDrop, rotate, pauseGame, resumeGame])
 
   return (
     <div className="min-h-screen bg-gray-950 flex flex-col items-center justify-center p-4">

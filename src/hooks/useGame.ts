@@ -55,11 +55,12 @@ export function useGame(initialState?: GameState) {
 
   const setStateAndRef = useCallback(
     (updater: GameState | ((prev: GameState) => GameState)) => {
-      const newState = typeof updater === 'function' ? updater(state) : updater
+      const prev = stateRef.current
+      const newState = typeof updater === 'function' ? updater(prev) : updater
       setState(newState)
       stateRef.current = newState
     },
-    [state],
+    [],
   )
 
   const startGame = useCallback(() => {
